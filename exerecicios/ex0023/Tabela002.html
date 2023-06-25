@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        caption{
+            font-size: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            background-color: rgb(158, 156, 156)
+        }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:  rgb(54, 53, 53);
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        tbody >tr:nth-child(2n){
+            background-color: lightgray
+        }
+        table{
+            position: relative;
+            width: 500px;
+            border-collapse: collapse;
+        }
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+background-color: rgb(54, 53, 53);
+color: white;
+        }
+        .num{
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Uso de Tabela grandes
+    </h1>
+    <!--Anatomias para tabelas grandes table
+        a tag <caption> = é a legenda da tabela, ficando logo acima do topo da tabela 
+
+        Thead 
+           TD, TR, TH
+        Tbody
+           TD, TR, TH
+        Tfoot
+            TD, TR, TH
+    -->
+
+    <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+            
+        </thead>
+
+        <tbody>
+            <tr></tr>
+            <tr>
+                <td>São Paulo </td>
+                <td class="num">45.919.049</td>
+                
+            </tr>
+            <tr>
+                <td>Minas Gerais </td>
+                <td class="num">21.264.943</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro </td>
+                <td class="num">17 264.943 </td>
+            </tr>
+            <tr>
+                <td>Brasilia</td>
+                <td class="num">53.001.08</td>
+            </tr>
+            <tr>
+                <td>Salvador</td>
+                <td class="num">29.274.08</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">23.044.00</td>
+            </tr>
+            <tr>
+                <td>Belo Horizonte</td>
+                <td class="num">31.062.00</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">41.069.02</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">26.116.06</td>
+            </tr>
+            <tr>
+                <td>Goiânia</td>
+                <td class="num">52.087.07</td>
+            </tr>
+            <tr>
+                <td>Belém</td>
+                <td class="num">15.014.02</td>
+            </tr>
+            <td>São Paulo </td>
+            <td class="num">45.919.049</td>
+            
+        </tr>
+        <tr>
+            <td>Minas Gerais </td>
+            <td class="num">21.264.943</td>
+        </tr>
+        <tr>
+            <td>Rio de janeiro </td>
+            <td class="num">17 264.943 </td>
+        </tr>
+        <tr>
+            <td>Brasilia</td>
+            <td class="num">53.001.08</td>
+        </tr>
+        <tr>
+            <td>Salvador</td>
+            <td class="num">29.274.08</td>
+        </tr>
+        <tr>
+            <td>Fortaleza</td>
+            <td class="num">23.044.00</td>
+        </tr>
+        <tr>
+            <td>Belo Horizonte</td>
+            <td class="num">31.062.00</td>
+        </tr>
+        <tr>
+            <td>Curitiba</td>
+            <td class="num">41.069.02</td>
+        </tr>
+        <tr>
+            <td>Recife</td>
+            <td class="num">26.116.06</td>
+        </tr>
+        <tr>
+            <td>Goiânia</td>
+            <td class="num">52.087.07</td>
+        </tr>
+        <tr>
+            <td>Belém</td>
+            <td class="num">15.014.02</td>
+        </tr>
+        <td>São Paulo </td>
+        <td class="num">45.919.049</td>
+        
+    </tr>
+    <tr>
+        <td>Minas Gerais </td>
+        <td class="num">21.264.943</td>
+    </tr>
+    <tr>
+        <td>Rio de janeiro </td>
+        <td class="num">17 264.943 </td>
+    </tr>
+    <tr>
+        <td>Brasilia</td>
+        <td class="num">53.001.08</td>
+    </tr>
+    <tr>
+        <td>Salvador</td>
+        <td class="num">29.274.08</td>
+    </tr>
+    <tr>
+        <td>Fortaleza</td>
+        <td class="num">23.044.00</td>
+    </tr>
+    <tr>
+        <td>Belo Horizonte</td>
+        <td class="num">31.062.00</td>
+    </tr>
+    <tr>
+        <td>Curitiba</td>
+        <td class="num">41.069.02</td>
+    </tr>
+    <tr>
+        <td>Recife</td>
+        <td class="num">26.116.06</td>
+    </tr>
+    <tr>
+        <td>Goiânia</td>
+        <td class="num">52.087.07</td>
+    </tr>
+    <tr>
+        <td>Belém</td>
+        <td class="num">15.014.02</td>
+    </tr>
+        </tbody>
+        <tfoot>
+<tr>
+    <th>Total de aitantes</th>
+    <td class="num"><strong>000000</strong></td>
+</tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem quae pariatur modi eligendi veritatis architecto quisquam dolorem deserunt? Iure at reprehenderit incidunt velit ipsa, voluptates eveniet sapiente minima molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nemo tempora error ipsum quisquam ipsam nihil recusandae, fugiat expedita voluptates quo dolorem exercitationem ad provident minima sit ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque molestias porro, eius voluptatibus quidem. Sequi iure laudantium iusto magni laboriosam libero eum minus provident, nisi commodi nesciunt rerum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, maxime numquam necessitatibus dolor maiores soluta aliquam expedita. Excepturi molestiae fugit possimus unde dolore tempore reprehenderit cumque voluptates cupiditate consequatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem quae pariatur modi eligendi veritatis architecto quisquam dolorem deserunt? Iure at reprehenderit incidunt velit ipsa, voluptates eveniet sapiente minima molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nemo tempora error ipsum quisquam ipsam nihil recusandae, fugiat expedita voluptates quo dolorem exercitationem ad provident minima sit ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque molestias porro, eius voluptatibus quidem. Sequi iure laudantium iusto magni laboriosam libero eum minus provident, nisi commodi nesciunt rerum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, maxime numquam necessitatibus dolor maiores soluta aliquam expedita. Excepturi molestiae fugit possimus unde dolore tempore reprehenderit cumque voluptates cupiditate consequatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem quae pariatur modi eligendi veritatis architecto quisquam dolorem deserunt? Iure at reprehenderit incidunt velit ipsa, voluptates eveniet sapiente minima molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nemo tempora error ipsum quisquam ipsam nihil recusandae, fugiat expedita voluptates quo dolorem exercitationem ad provident minima sit ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque molestias porro, eius voluptatibus quidem. Sequi iure laudantium iusto magni laboriosam libero eum minus provident, nisi commodi nesciunt rerum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, maxime numquam necessitatibus dolor maiores soluta aliquam expedita. Excepturi molestiae fugit possimus unde dolore tempore reprehenderit cumque voluptates cupiditate consequatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem quae pariatur modi eligendi veritatis architecto quisquam dolorem deserunt? Iure at reprehenderit incidunt velit ipsa, voluptates eveniet sapiente minima molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nemo tempora error ipsum quisquam ipsam nihil recusandae, fugiat expedita voluptates quo dolorem exercitationem ad provident minima sit ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque molestias porro, eius voluptatibus quidem. Sequi iure laudantium iusto magni laboriosam libero eum minus provident, nisi commodi nesciunt rerum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, maxime numquam necessitatibus dolor maiores soluta aliquam expedita. Excepturi molestiae fugit possimus unde dolore tempore reprehenderit cumque voluptates cupiditate consequatur?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde voluptatem quae pariatur modi eligendi veritatis architecto quisquam dolorem deserunt? Iure at reprehenderit incidunt velit ipsa, voluptates eveniet sapiente minima molestias?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nemo tempora error ipsum quisquam ipsam nihil recusandae, fugiat expedita voluptates quo dolorem exercitationem ad provident minima sit ut saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque molestias porro, eius voluptatibus quidem. Sequi iure laudantium iusto magni laboriosam libero eum minus provident, nisi commodi nesciunt rerum hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consectetur, maxime numquam necessitatibus dolor maiores soluta aliquam expedita. Excepturi molestiae fugit possimus unde dolore tempore reprehenderit cumque voluptates cupiditate consequatur?</p>
+</body>
+
+</html>
